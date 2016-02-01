@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#slider{
+	position: relative;
+	width:100%;
+	height: 268px;
+	overflow: hidden;
+}
+#slider .wrapper{
+	position: absolute;
+	left: 0px;
+	height: 212px;
+	width:400%;
+	margin: 50px auto;
+}
+
+#slider .wrapper .move{
+	float:left;
+	position: relative;
+	width:25%;
+}
+
+#slider .wrapper .move a img{
+	width:100%;
+  	height: 212px;
+}
+
+     /* 以下为下方索引样式 */
+        #quickClick{
+        	width: 100%;
+            height: 8px;
+            position: absolute;
+            bottom: 1px;
+            left: 0px;
+            font-size: 0;
+            text-align: center;
+        }
+        #quickClick li{
+            width:33.33333%;
+            height: 100%;
+            list-style: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+        #quickClick .active{
+            background-color: rgb(76, 134, 214);
+        }
+        #quickClick .inactive{
+            opacity: 0;
+        }

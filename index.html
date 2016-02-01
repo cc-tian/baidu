@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="src/css/app.css">
+</head>
+<body>
+	<div id="slider">
+		<div class="wrapper">
+			<div class="move">
+				<a href="">
+					<img src="./src/images/1.png" alt="">
+				</a>	
+			</div>
+			<div class="move">
+				<a href="">
+					<img src="./src/images/2.png" alt="">
+				</a>	
+			</div>
+			<div class="move">
+				<a href="">
+					<img src="./src/images/3.png" alt="">
+				</a>	
+			</div>
+		</div>
+		<ul id="quickClick">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+       	</ul>
+	</div>
+	<script src="src/js/slider.js"></script>
+	<script>
+		var slider=window.baidu.Slider();
+		slider({
+			id:'slider',
+			auto:false,
+			interval:1300,
+		});
+	</script>
+</body>
+</html>
